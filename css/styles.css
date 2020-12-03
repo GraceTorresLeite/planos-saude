@@ -1,0 +1,86 @@
+/* iniciar sessoes com comentários*/
+
+
+/* Visualização Geral*/
+
+h1 {
+    color: red;
+}
+
+body {
+    font-family: 'Roboto', sans-serif
+}
+
+
+/*bootstrap usa a classe row para fazer linhas , tirar a margem pois começa negativa*/
+
+.row {
+    margin: 0;
+}
+
+
+/*classe container zerando as laterais*/
+
+.container {
+    padding: 70px 0;
+}
+
+
+/*definindo cor cinza e fonte*/
+
+p,
+li {
+    color: #444;
+    font-size: 14px;
+}
+
+
+/*Visualização Barra de navegação (sem pontução é tag)*/
+
+header,
+.navbar {
+    background-color: #353D41;
+}
+
+#nav-container {
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+
+/* largura (#)id alterado de 75 para 100*/
+
+#logo {
+    max-width: 100%;
+    height: auto;
+    padding-left: 40px;
+}
+
+
+/* nome do lado do logo fica branco(.)classe*/
+
+.navbar-brand {
+    padding: 0;
+    color: #FFF;
+}
+
+
+/* não muda de cor quando o mouse passar*/
+
+.navbar-brand:hover {
+    color: #FFF;
+}
+
+
+/* os lonks ficam brancos*/
+
+#navbar-links a {
+    color: #FFF;
+}
+
+
+/* rem=trabalha com elemento hoot/ unidades de medida que se adaptam ao tamanho da fonte da página(1 x 80% )*/
+
+.navbar-expand-lg .navbar-nav .nav-link {
+    padding: 1rem .8rem;
+}
