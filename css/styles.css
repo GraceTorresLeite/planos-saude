@@ -170,22 +170,6 @@ div.nav-test {
     column-span: all;
 }
 
-div.duasColunas {
-    -webkit-column-count: 2;
-    /* Chrome, Safari, Opera */
-    -moz-column-count: 2;
-    /* Firefox */
-    column-count: 2;
-    column-gap: 150px;
-    padding: 40px;
-    line-height: 20px;
-}
-
-.duasColunas h5,
-p {
-    width: 200px;
-}
-
 div#um {
     background-color: #FFF;
 }

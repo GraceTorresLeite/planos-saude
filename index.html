@@ -31,25 +31,35 @@
     <!--Parallax.js-->
     <!--https://github.com/pixelcog/parallax.js/-->
     <!--https://pixelcog.github.io/parallax.js/-->
+
+    <style>
+        .borda {
+            width: 340px;
+            background-color: tomato;
+            border: 1px solid #000000;
+        }
+    </style>
+
     <script src="https://cdn.jsdelivr.net/parallax.js/1.4.2/parallax.min.js"></script>
 </head>
-<main>
-    <div class="container">
-        <div id="about-us">
-            <div class="container">
-                <div class="row">
-                    <div class="col-12">
-                        <h3 class="main-title">About Us</h3>
-                    </div>
-                    <div class="container-lg">
-                        <nav>
-                            <a href="#um" title="ir para quadro 1">Quem somos</a>
-                            <a href="#dois" title="ir para quadro 2">Parceiros</a>
-                            <a href="#tres" title="ir para quadro 3">Contato</a>
-                        </nav>
-                        <div class="nav-test" id="um">Nosso time possui os melhores parceiros
-                            <div class="duasColunas">
 
+<body>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <h3 class="main-title">About Us</h3>
+            </div>
+            <div class="container-lg">
+                <nav>
+                    <a href="#um" title="ir para quadro 1">Quem somos</a>
+                    <a href="#dois" title="ir para quadro 2">Parceiros</a>
+                    <a href="#tres" title="ir para quadro 3">Contato</a>
+                </nav>
+                <div class="row">
+                    <div class="nav-test col-sm-12" id="um">Nosso time possui os melhores parceiros
+                        <div class="row">
+                            <div class="col-sm-12">
                                 <h5>Administradores</h5>
                                 <p>Formação conceituada</p>
                                 <p>Experiência de Mercado</p>
@@ -57,79 +67,26 @@
                                 <h5>Designers</h5>
                                 <p>Formação conceituada</p>
                                 <p>Experiência de Mercado</p>
-
-                                <h5>Corretores</h5>
-                                <p>Formação conceituada</p>
-                                <p>Experiência de Mercado</p>
-
-                                <h5>Atendimento</h5>
-                                <p>Formação conceituada</p>
-                                <p>Experiência de Mercado</p>
-
-
                             </div>
                         </div>
+                        <div class="col-sm-12">
+                            <h5>Corretores</h5>
+                            <p>Formação conceituada</p>
+                            <p>Experiência de Mercado</p>
 
-                        <div class="nav-test" id="dois">Bradesco,Unimed,Amil</div>
-                        <div class="nav-test" id="tres">Whatsapp, Facebook e Telefone</div>
+                            <h5>Atendimento</h5>
+                            <p>Formação conceituada</p>
+                            <p>Experiência de Mercado</p>
+
+                        </div>
                     </div>
+                    <div class="nav-test col-sm-12" id="dois">Bradesco,Unimed,Amil</div>
+                    <div class="nav-test col-sm-12" id="tres">Whatsapp, Facebook e Telefone</div>
                 </div>
+
             </div>
         </div>
     </div>
-</main>
-
-<body>
-
-    <header>
-        <div class="container" id="nav-container">
-            <nav class="navbar navbar-expand-lg fixed-top">
-                <a href="#" class="navbar-brand">
-                    <img id="logo" src="img/seguro-saude-1.png" alt="Segurar Planos de Saúde">
-                    <!--alt = atributo para os robos lerem a imagem-->
-                </a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-links" aria-controls="navbar-links" aria-expanded="false" aria-label="Toggle navigation">
-                     <span class="navbar-toggler-icon"></span>
-                </button>
-                <!--lista icones sociais/ nav clearfix justity-content-end-->
-
-                <div class="collapse navbar-collapse" id="navbar-links">
-                    <ul class="navbar-nav ml-auto">
-                        <li class="navbar-nav">
-                            <a class="nav-item nav-link">
-                                <i class="fa fa-facebook-square"></i>
-                            </a>
-                        </li>
-                        <li class="navbar-nav">
-                            <a class="nav-item nav-link">
-                                <i class="fa fa-twitter"></i>
-                            </a>
-                        </li>
-                        <li class="navbar-nav">
-                            <a class="nav-item nav-link">
-                                <i class="fa fa-instagram"></i>
-                            </a>
-                        </li>
-                        <li class="navbar-nav">
-                            <a class="nav-item nav-link">
-                                <i class="fa fa-youtube"></i>
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-
-                <!--lista de sessoes do site com a div-->
-                <div class="collapse navbar-collapse justify-content-end" id="navbar-links">
-                    <!--colocando os links dentro de div-->
-                    <div class="navbar-nav">
-                        <a class="nav-item nav-link" id="home-menu">Home</a>
-                        <a class="nav-item nav-link" id="about-menu">Sobre nós</a>
-                        <a class="nav-item nav-link" id="services-menu">Serviços</a>
-                    </div>
-                </div>
-            </nav>
-        </div>
-    </header>
 
     <script src="js/scripts.js"></script>
 </body>
