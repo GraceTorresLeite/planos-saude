@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="pt-Br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Segurar - o seu Plano de Saúde</title>
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;1,700&display=swap" rel="stylesheet">
+    <!--Bootstrap/ colocar sempre acima do meu css para não subescrever-->
+    <!--https://getbootstrap.com/docs/4.4/getting-started/download/-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!--Meu css-->
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="https://kit.fontawesome.com/2c9d4087e0.js" crossorigin="anonymous"></script>
+    <style>
+        div.container-test,
+        div.container-fluid {
+            background: red;
+            border: 3px solid red;
+            min-height: 20px;
+        }
+        
+        div.row {
+            background: yellow;
+            border: 5px solid gold;
+            min-height: 20px;
+        }
+        
+        #grey {
+            background: rgb(168, 168, 168);
+            border: 2px solid rgb(168, 168, 168);
+        }
+        
+        div.class-up {
+            border: 2px solid blue;
+            background: cornflowerblue;
+            min-height: 250px;
+        }
+        
+        #class-up {
+            border: 2px solid blue;
+            background: cornflowerblue;
+        }
+        
+        #class-up-center {
+            border: 2px solid blue;
+            background: cornflowerblue;
+            margin-left: 140px;
+        }
+        
+        div.section {
+            min-height: 450px;
+        }
+        
+        .font {
+            font-size: 25px;
+            color: red;
+            margin-left: 45%;
+        }
+        
+        .font-red {
+            font-size: 40px;
+            color: red;
+        }
+        
+        .borda {
+            width: 340px;
+            background-color: tomato;
+            border: 1px solid #000000;
+        }
+    </style>
+</head>
+
+<body>
+    <!--inicio primeiro container-->
+    <div class="container-test">container
+        <div class="row">
+            <div class="col-12" id="class-up">
+                <span class="font">CHECK OUR</span>
+                <div class="row">
+                    <div class="col-12">
+                        <h3 class="main-title">LATEST WORK</h3>
+                        <hr>
+                    </div>
+                </div>
+            </div>
+            <!--inicio segundo container-->
+            <div class="container">container
+                <div class="row">
+                    <div class="col-sm-4 borda">coluna1
+
+                    </div>
+                    <div class="col-sm-8 section">
+                        <div class="row">
+                            <div class="col-sm-6 borda">
+                                <strong>Primeira seção</strong>
+                            </div>
+                            <div class="col-sm-6 borda">
+                                <strong>Segunda seção</strong>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-6 borda">
+                                <strong>Terceira seção</strong>
+                            </div>
+                            <div class="col-sm-6 borda">
+                                <strong>Quarta seção</strong>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--fim segundo container-->
+        </div>
+        <!--Inicio terceiro container-->
+        <div class="container-test">container
+            <div class="row" id="grey">
+                <div class="col-12" id="class-up">
+                    <center>
+                        <h4><i class="fas fa-quote-left"></i>WHAT OUR
+                            <span class="font-red">CLIENTS</span> SAID?<i class="fas fa-quote-right"></i></h4>
+                    </center>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-9" id="class-up-center">
+                    <div class="row">
+                        <div class="col-4 borda">fff</div>
+                        <div class="col-4 borda">fff</div>
+                        <div class="col-4 borda">fff</div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <!--fim primeiro container-->
+    </div>
+
+    <script src="js/scripts.js"></script>
+
+</body>
+
+</html>

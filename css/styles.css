@@ -14,15 +14,11 @@ body {
 
 /*bootstrap usa a classe row para fazer linhas , tirar a margem pois começa negativa*/
 
-.row {
-    margin: 0;
-}
-
 
 /*classe container zerando as laterais*/
 
 .container {
-    padding: 70px 0;
+    padding: 60px 0;
 }
 
 
@@ -104,11 +100,19 @@ header,
 
 .main-title::after {
     content: "";
-    border-top: 2px solid #333;
-    width: 15%;
+    border-top: 2px solid red;
+    width: 10%;
     position: absolute;
     top: 60px;
-    left: 42.5%;
+    left: 45%;
+}
+
+hr {
+    border-top: 2px solid red;
+    width: 5%;
+    position: absolute;
+    top: 50px;
+    left: 47.5%;
 }
 
 .about-title {
