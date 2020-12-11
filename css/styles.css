@@ -22,7 +22,7 @@ https://pt.stackoverflow.com/questions/299631/como-exibir-o-dropdown-apenas-desl
     position: absolute;
     transform: translate3d(5px, 28px, 0px);
     /* distancia entre menu e btn */
-    top: 0px;
+    top: 15px;
     left: 0px;
     will-change: transform;
 }
@@ -32,6 +32,15 @@ https://pt.stackoverflow.com/questions/299631/como-exibir-o-dropdown-apenas-desl
     /* deixa o LO do "tamanho do próprio texto" e não da largura inteira da tela*/
     list-style: none;
     /* rita a "bolinha" do LI*/
+}
+
+
+/*inserir mais colunas no dropdown-menu sem alterar padrão mobile, somente em telas maiores*/
+
+@media (min-width:768px) {
+    .dropdown-menu {
+        min-width: 300px;
+    }
 }
 
 

@@ -18,7 +18,7 @@
     <link rel="stylesheet" href="css/styles.css">
     <script src="https://kit.fontawesome.com/2c9d4087e0.js" crossorigin="anonymous"></script>
     <style>
-        div.section {
+        .section {
             min-height: 350px;
         }
         
@@ -70,72 +70,181 @@
 
         <nav class="navbar  navbar-expand-lg navbar-light bg-light">
             <div class="container-fluid ">
-
-
                 <!--<a class="navbar-brand" href="#">Navbar</a>-->
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
               </button>
                 <div class="collapse navbar-collapse justify-content-center" id="navbarNavDropdown">
                     <ul class="navbar-nav">
-
-
+                        <!--EXERCICIO 1-->
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">Combo 1</a>
-                            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <a class="nav-link dropdown" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">Exercício 1</a>
+
+                            <ul class="dropdown-menu row" aria-labelledby="navbarDropdownMenuLink">
                                 <!--retirando a seta / <a>"dropdown-menu(-toggle)"</a>-->
-                                <li><a class="dropdown-item" href="#">Action</a></li>
-                                <li><a class="dropdown-item" href="#">Another action</a></li>
-                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                <li class="col-sm-3">
+                                    <a class="dropdown-item" href="https://github.com/GraceTorresLeite/planos-saude">Repositório</a>
+                                    <h6>(ul)row</h6>
+                                    <h6>(li)col-3</h6>
+                                </li>
+                                <li class="col-sm-3">
+                                    <a class="dropdown-item" href="https://gracetorresleite.github.io/planos-saude/exercicio1.html">Protótipo</a>
+                                    <h6>(li)col-3</h6>
+                                </li>
+                                <li class="col-sm-6">
+                                    Imagem<img src="img/exercicio1.png" alt="Exercicio 1" id="logo">
+                                    <h6>(li)col-6</h6>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <!--EXERCICIO 2.1-->
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">Exercício 2.1</a>
+                            <ul class="dropdown-menu row" aria-labelledby="navbarDropdownMenuLink">
+                                <!--aplicando multiplas colunas no dropdown só com Bootstrap-->
+                                <li class="col-sm-6">
+                                    <a class="dropdown-item" href="https://github.com/GraceTorresLeite/planos-saude">Repositório</a>
+                                    <a class="dropdown-item" href="https://gracetorresleite.github.io/planos-saude/exercicio2.html">Protótipo</a>
+                                    <h6>(ul)row</h6>
+                                    <h6>(li)col-6</h6>
+                                </li>
+                                <li class="col-sm-6">
+                                    <img src="img/exercicio2.png" alt="Exercicio 1" class="img-fluid">
+                                    <h6>(li)col-6</h6>
+                                    <h6>(img)fluid</h6>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <!--EXERCICIO 2.2-->
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">Exercício 2.2</a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                <div class="row">
+                                    <li class="col-sm-4">
+                                        <a class="dropdown-item" href="https://github.com/GraceTorresLeite/planos-saude">Repositório</a>
+                                        <a class="dropdown-item" href="https://gracetorresleite.github.io/planos-saude/exercicio2.html">Protótipo</a>
+                                        <h6>(div)row</h6>
+                                        <h6>(li)col-4</h6>
+                                    </li>
+                                    <li class="col-sm-8">
+                                        <img src="img/exercicio2.png" alt="Exercicio 1" class="img-fluid m-1">
+                                        <h6>(li)col-8</h6>
+                                        <h6>(img)fluid m-1</h6>
+                                    </li>
+                                </div>
+                            </ul>
+                        </li>
+
+                        <!--EXERCICIO 3-->
+                        <li class=" nav-item dropdown ">
+                            <a class="nav-link dropdown " href="# " id="navbarDropdownMenuLink " role="button " data-bs-toggle="dropdown " aria-expanded="false ">Exercício 3</a>
+                            <ul class="dropdown-menu " aria-labelledby="navbarDropdownMenuLink ">
+                                <div class="row ">
+                                    <div class="col-sm-4 ">
+                                        <li>
+                                            <h4>Teste 1</h4>
+                                            <a class="dropdown-item " href="# ">Action 1</a>
+                                            <a class="dropdown-item " href="# ">Action 2</a>
+                                            <a class="dropdown-item " href="# ">Action 3</a>
+                                            <h6>(div)row</h6>
+                                            <h6>(div)col-4</h6>
+                                        </li>
+                                    </div>
+
+                                    <div class="col-sm-8 ">
+                                        <li>
+                                            <h4>Teste 2</h4>
+                                            <img src="img/exercicio3.png " alt="Exercicio 3 " class="img-fluid">
+                                            <h6>(div)col-8</h6>
+                                            <h6>(img)fluid</h6>
+                                        </li>
+                                    </div>
+
+                                </div>
+
+                            </ul>
+                        </li>
+
+                        <!--EXERCICIO 4-->
+                        <li class=" nav-item dropdown ">
+                            <a class="nav-link dropdown " href="# " id="navbarDropdownMenuLink " role="button " data-bs-toggle="dropdown " aria-expanded="false ">Exercício 4</a>
+                            <ul class="dropdown-menu " aria-labelledby="navbarDropdownMenuLink ">
+                                <div class="row ">
+                                    <div class="col-sm-4 ">
+                                        <li>
+                                            <h4>Teste 1</h4>
+                                            <a class="dropdown-item " href="(https://gracetorresleite.github.io/planos-saude/exercicio4.html">Protótipo</a>
+                                            <h6>(div)row</h6>
+                                            <h6>(div)col-4</h6>
+                                        </li>
+                                    </div>
+
+                                    <div class="col-sm-8 ">
+                                        <li>
+                                            <h4>Teste 2</h4>
+                                            Fase 1<img src="img/exercicio4.png " alt="Exercicio 3 " class="img-fluid m-1"> Fase 2<img src="img/exercicio4-2.png " alt="Exercicio 3 " class="img-fluid m-1">
+                                            <h6>(div)col-8</h6>
+                                            <h6>(img)fluid m-1</h6>
+                                        </li>
+                                    </div>
+
+                                </div>
+
                             </ul>
                         </li>
 
 
+                        <!--EXERCICIO 5-->
+                        <!--colunas ultrapassa limites do box-->
+                        <li class="nav-item dropdown ">
+                            <a class="nav-link dropdown " href="# " id="navbarDropdownMenuLink " role="button " data-bs-toggle="dropdown " aria-expanded="false ">Combo 5</a>
+                            <ul class="dropdown-menu " aria-labelledby="navbarDropdownMenuLink ">
+                                <div class="row ">
+                                    <div class="col-sm-4 ">
+                                        <li>
+                                            <h4>Teste 1</h4>
+                                            <a class="dropdown-item " href="# ">Action 1</a>
+                                            <a class="dropdown-item " href="# ">Action 2</a>
+                                            <a class="dropdown-item " href="# ">Action 3</a>
+                                            <h6>(div)row</h6>
+                                            <h6>(div)col-4</h6>
+                                        </li>
+                                    </div>
 
+                                    <div class="col-sm-4 borda ">
+                                        <li>
+                                            <h4>Teste 2</h4>
+                                            <a class="dropdown-item " href="# ">Action 1</a>
+                                            <a class="dropdown-item " href="# ">Action 2</a>
+                                            <a class="dropdown-item " href="# ">Action 3</a>
+                                            <h6>(div)col-4</h6>
+                                        </li>
+                                    </div>
 
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">Combo 2</a>
-                            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                                <li><a class="dropdown-item" href="#">Action</a></li>
-                                <li><a class="dropdown-item" href="#">Another action</a></li>
-                                <li><a class="dropdown-item" href="#">Something else here</a></li>
-                            </ul>
-                        </li>
-
-
-
-
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">Combo 3</a>
-                            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                                <li><a class="dropdown-item" href="#">Action</a></li>
-                                <li><a class="dropdown-item" href="#">Another action</a></li>
-                                <li><a class="dropdown-item" href="#">Something else here</a></li>
-                            </ul>
-                        </li>
-
-
-
-
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">Combo 4</a>
-                            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                                <li><a class="dropdown-item" href="#">Action</a></li>
-                                <li><a class="dropdown-item" href="#">Another action</a></li>
-                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                    <div class="col-sm-4 ">
+                                        <li>
+                                            <h4>Teste 3</h4>
+                                            <a class="dropdown-item " href="# ">Action 1</a>
+                                            <a class="dropdown-item " href="# ">Action 2</a>
+                                            <a class="dropdown-item " href="# ">Action 3</a>
+                                            <h6>(div)col-4</h6>
+                                        </li>
+                                    </div>
+                                </div>
                             </ul>
                         </li>
 
                     </ul>
                 </div>
-
-
             </div>
         </nav>
 
-        <div class="container">
-            <div class="row">
-                <div class="col-12 section">
+
+        <div class="container ">
+            <div class="row ">
+                <div class="col-12 section ">
 
                 </div>
             </div>
@@ -143,14 +252,14 @@
     </main>
 
 
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js" integrity="sha384-q2kxQ16AaE6UbzuKqyBE9/u/KzioAlnx2maXQHiDX9d4/zp8Ok3f+M7DPm+Ib6IU" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js " integrity="sha384-q2kxQ16AaE6UbzuKqyBE9/u/KzioAlnx2maXQHiDX9d4/zp8Ok3f+M7DPm+Ib6IU " crossorigin="anonymous "></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js " integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj " crossorigin="anonymous "></script>
     <script src="js/scripts.js "></script>
 
     <center>
         <footer>
-            <img src="img/seguro-saude-1.png" width="90px" height="50px">
-            <p class="copyright">&copy; Copyright Seguro Saúde - 2020</p>
+            <img src="img/seguro-saude-1.png " width="90px " height="50px ">
+            <p class="copyright ">&copy; Copyright Seguro Saúde - 2020</p>
         </footer>
     </center>
 </body>
