@@ -12,7 +12,10 @@ body {
 }
 
 
-/*Mexendo no hover do dropdown , aparecer quando deslizar o mouse*/
+/*Mexendo no hover do dropdown , aparecer quando deslizar o mouse--
+OBS 2: Tive que tirar alguns atributos padrão dos dropmenus do Bootstrap para ele não ser mais clicável ok.
+Se vc for usar esse Drop em outras situações aconselho usar classes novas e não editar as default do Bootstrap.
+https://pt.stackoverflow.com/questions/299631/como-exibir-o-dropdown-apenas-deslizando-o-mouse-sobre-o-conte%C3%BAdo..*/
 
 .dropdown:hover .dropdown-menu {
     display: block;
