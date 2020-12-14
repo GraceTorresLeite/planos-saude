@@ -6,6 +6,8 @@
 
 ### [Protótipo inicial](https://gracetorresleite.github.io/planos-saude/index.html)
 
+[Protótipo About-us](https://gracetorresleite.github.io/planos-saude/about_us.html)
+
 [Protótipo Latest](https://gracetorresleite.github.io/planos-saude/latest.html)
 
 [Protótipo Exercício 1 - linhas e colunas](https://gracetorresleite.github.io/planos-saude/exercicio1.html)
@@ -17,3 +19,4 @@
 [Protótipo Exercício 4 - nav com dropdown múltiplas colunas](https://gracetorresleite.github.io/planos-saude/exercicio4.html)
 
 [Referências pesquisa](https://pt.stackoverflow.com/questions/98060/como-colocar-logo-no-cabe%C3%A7alho/98084)
+![Modelo](https://planodesaudesegurar.com.br/contato-e-localizacao/)
