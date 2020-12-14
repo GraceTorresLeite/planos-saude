@@ -19,4 +19,5 @@
 [Protótipo Exercício 4 - nav com dropdown múltiplas colunas](https://gracetorresleite.github.io/planos-saude/exercicio4.html)
 
 [Referências pesquisa](https://pt.stackoverflow.com/questions/98060/como-colocar-logo-no-cabe%C3%A7alho/98084)
-![Modelo](https://planodesaudesegurar.com.br/contato-e-localizacao/)
+
+![Modelo](https://planodesaudesegurar.com.br)
