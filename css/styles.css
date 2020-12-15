@@ -274,6 +274,11 @@ https://pt.stackoverflow.com/questions/299631/como-exibir-o-dropdown-apenas-desl
     div:target {
         z-index: 1000;
     }
+    /* Div section*/
+    
+    div.section {
+        min-height: 350px;
+    }
     /* Lista de quem somos nós*/
     /*bola numerada*/
     
@@ -328,4 +333,38 @@ https://pt.stackoverflow.com/questions/299631/como-exibir-o-dropdown-apenas-desl
         margin-block-end: 1em;
         margin-inline-start: 0px;
         margin-inline-end: 0px;
+    }*/
+    /*css latest*/
+    
+    .borda {
+        background-color: grey;
+        border: 1px solid rgb(73, 72, 72);
+    }
+    
+    .borda-1 {
+        background-color: rgb(116, 111, 111);
+        border: 1px solid rgb(73, 72, 72);
+    }
+    
+    .borda-2 {
+        background-color: rgb(163, 158, 158);
+        border: 1px solid rgb(73, 72, 72);
+    }
+    
+    .borda-3 {
+        background-color: rgb(187, 180, 180);
+        border: 1px solid rgb(73, 72, 72);
+    }
+    
+    .borda-4 {
+        background-color: rgb(209, 202, 202);
+        border: 1px solid rgb(73, 72, 72);
+    }
+    
+    .borda-red:hover {
+        background-color: red;
+        border: 1px solid rgb(73, 72, 72);
+    }
+    /* #class-up-center {
+        margin-left: 140px;
     }*/
