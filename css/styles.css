@@ -164,6 +164,11 @@ https://pt.stackoverflow.com/questions/299631/como-exibir-o-dropdown-apenas-desl
         font-size: 40px;
         color: #fb6e52;
     }
+    
+    .font-aspas {
+        font-family: 'Roboto';
+        text-align: center;
+    }
     /*usando elemento after para colocar a barra no titulo*/
     
     .main-title::after {
