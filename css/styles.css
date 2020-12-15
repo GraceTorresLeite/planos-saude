@@ -1,16 +1,38 @@
     /* iniciar sessoes com comentários*/
     /* Visualização Geral*/
+    /*@font-face {
+        font-family: 'fonte';
+        src: url('../../fonts/fonte.eot')/*Para navegadores Internet Explorer;
+        font-weight: normal;
+        font-style: normal;
+    }*/
+    
+    @font-face {
+        font-family: 'Roboto';
+        src: url('../../fonts/Roboto/Roboto-Regular.ttf')/*Para os demais navegadores*/
+        ;
+        font-weight: normal;
+        font-style: normal;
+    }
+    
+    @font-face {
+        font-family: 'OpenSans';
+        src: url('../../fonts/OpenSans/OpenSans-Regular.ttf')/*Para os demais navegadores*/
+        ;
+        font-weight: normal;
+        font-style: normal;
+    }
     
     h1 {
-        color: red;
+        color: #fb6e52;
     }
     
     h4 {
-        font-family: 'Roboto', sans-serif;
+        font-family: "Roboto";
     }
     
     body {
-        font-family: 'Roboto', sans-serif
+        font-family: "Roboto";
     }
     /*Mexendo no hover do dropdown , aparecer quando deslizar o mouse--
 OBS 2: Tive que tirar alguns atributos padrão dos dropmenus do Bootstrap para ele não ser mais clicável ok.
@@ -43,21 +65,28 @@ https://pt.stackoverflow.com/questions/299631/como-exibir-o-dropdown-apenas-desl
     /*classe container zerando as laterais*/
     
     .container {
-        padding: 20px 0;
+        padding: 25px 0 0 8px;
     }
     /*definindo cor cinza e fonte*/
     
     p,
     li {
-        color: #444;
+        color: #a4a4a4;
         font-size: 15px;
-        font-family: 'Roboto', sans-serif;
+        font-family: "Open-Sans";
     }
     
-    p.small {
-        font-family: 'Roboto', sans-serif;
+    #grey {
+        color: #a4a4a4;
+        font-family: "Open-Sans";
+    }
+    
+    #small {
+        color: #a4a4a4;
+        font-family: "Open-Sans";
         line-height: 1.8;
         font-size: 15px;
+        margin-left: 10px;
     }
     /*Visualização Barra de navegação (sem pontução é tag)*/
     
@@ -117,7 +146,7 @@ https://pt.stackoverflow.com/questions/299631/como-exibir-o-dropdown-apenas-desl
     }
     
     .main-title {
-        color: #444;
+        color: black;
         margin: 0 0 65px 0;
         font-size: 40px;
         text-align: center;
@@ -127,13 +156,13 @@ https://pt.stackoverflow.com/questions/299631/como-exibir-o-dropdown-apenas-desl
     .font-red-check {
         font-size: 25px;
         color: #fb6e52;
-        font-family: 'Roboto', sans-serif;
+        font-family: 'Roboto';
         text-align: center;
     }
     
     .font-red-clients {
         font-size: 40px;
-        color: red;
+        color: #fb6e52;
     }
     /*usando elemento after para colocar a barra no titulo*/
     
@@ -165,7 +194,7 @@ https://pt.stackoverflow.com/questions/299631/como-exibir-o-dropdown-apenas-desl
     
     .about-title {
         font-size: 17px;
-        color: #444;
+        color: black;
         text-transform: uppercase;
         font-weight: bold;
     }
@@ -193,7 +222,7 @@ https://pt.stackoverflow.com/questions/299631/como-exibir-o-dropdown-apenas-desl
     
     nav a {
         padding: 10px;
-        font-family: 'Roboto', sans-serif;
+        font-family: "Roboto";
         font-size: 20px;
         color: black;
         /*font-weight: bold;*/
@@ -201,7 +230,7 @@ https://pt.stackoverflow.com/questions/299631/como-exibir-o-dropdown-apenas-desl
     
     .nav-item a {
         padding: 10px;
-        font-family: 'Roboto', sans-serif;
+        font-family: "Roboto";
         font-size: 20px;
         color: black;
         /*font-weight: bold;*/
@@ -210,7 +239,7 @@ https://pt.stackoverflow.com/questions/299631/como-exibir-o-dropdown-apenas-desl
     a:link,
     a:hover,
     a:active {
-        color: red;
+        color: #fb6e52;
         outline: none;
         text-decoration: none;
     }
@@ -222,7 +251,7 @@ https://pt.stackoverflow.com/questions/299631/como-exibir-o-dropdown-apenas-desl
         text-align: left;
         padding: 10px;
         color: black;
-        font-family: 'Roboto', sans-serif;
+        font-family: "Roboto";
         font-size: 16px;
         position: absolute;
         left: 470px;
@@ -256,7 +285,7 @@ https://pt.stackoverflow.com/questions/299631/como-exibir-o-dropdown-apenas-desl
         height: 30px;
         padding-top: 3px;
         text-align: center;
-        font-family: 'Roboto', sans-serif;
+        font-family: "Roboto";
         -webkit-border-radius: 500px;
         -moz-border-radius: 500px;
         border-radius: 500px;
@@ -279,18 +308,19 @@ https://pt.stackoverflow.com/questions/299631/como-exibir-o-dropdown-apenas-desl
     .special-list li {
         list-style: none;
         margin: 0;
-        font-family: 'Roboto', sans-serif;
+        font-family: "Open-Sans";
     }
     
     .special-list p {
         display: inline-block;
-        font-family: 'Roboto', sans-serif;
+        font-family: "Open-Sans";
     }
     
     ul,
     ol {
         line-height: 1.4;
-        padding: 0%;
+        padding: 0;
+        margin-left: 10px;
     }
     /* p {
         display: block;
