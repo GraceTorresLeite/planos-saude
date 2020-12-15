@@ -57,8 +57,7 @@ https://pt.stackoverflow.com/questions/299631/como-exibir-o-dropdown-apenas-desl
     p.small {
         font-family: 'Roboto', sans-serif;
         line-height: 1.8;
-        font-size: 16px;
-        text-align: center;
+        font-size: 15px;
     }
     /*Visualização Barra de navegação (sem pontução é tag)*/
     
@@ -128,7 +127,8 @@ https://pt.stackoverflow.com/questions/299631/como-exibir-o-dropdown-apenas-desl
     .font-red-check {
         font-size: 25px;
         color: #fb6e52;
-        margin-left: 43%;
+        font-family: 'Roboto', sans-serif;
+        text-align: center;
     }
     
     .font-red-clients {
@@ -171,18 +171,19 @@ https://pt.stackoverflow.com/questions/299631/como-exibir-o-dropdown-apenas-desl
     }
     
     #about-list {
+        font-size: 15px;
         list-style: none;
-        padding-left: 0;
+        padding-left: 0px;
     }
     
     #about-list li {
-        line-height: 30px;
+        line-height: 25px;
     }
     
     #about-list i {
         /*color: #65DAF9*/
         color: #fb6e52;
-        margin-right: 15px;
+        margin-right: 8px;
     }
     /**/
     
@@ -263,7 +264,7 @@ https://pt.stackoverflow.com/questions/299631/como-exibir-o-dropdown-apenas-desl
         border-top-right-radius: 500px;
         border-bottom-right-radius: 500px;
         border-bottom-left-radius: 500px;
-        background: #e4dddd;
+        background: #f3f3f3;
         background-image: initial;
         background-position-x: initial;
         background-position-y: initial;
@@ -272,7 +273,7 @@ https://pt.stackoverflow.com/questions/299631/como-exibir-o-dropdown-apenas-desl
         background-attachment: initial;
         background-origin: initial;
         background-clip: initial;
-        background-color: rgb(182, 176, 176);
+        background-color: #f3f3f3;
     }
     
     .special-list li {
@@ -289,5 +290,12 @@ https://pt.stackoverflow.com/questions/299631/como-exibir-o-dropdown-apenas-desl
     ul,
     ol {
         line-height: 1.4;
-        padding: 5%;
+        padding: 0%;
     }
+    /* p {
+        display: block;
+        margin-block-start: 1em;
+        margin-block-end: 1em;
+        margin-inline-start: 0px;
+        margin-inline-end: 0px;
+    }*/
