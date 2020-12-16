@@ -367,9 +367,35 @@ https://pt.stackoverflow.com/questions/299631/como-exibir-o-dropdown-apenas-desl
     }
     
     .borda-red:hover {
-        background-color: red;
+        background-color: #fb6e52;
         border: 1px solid rgb(73, 72, 72);
     }
     /* #class-up-center {
         margin-left: 140px;
     }*/
+    /*Hover para coluna red aparecer*/
+    
+    .desaparece-div {
+        list-style: none;
+    }
+    
+    .aparece-div {
+        position: relative;
+        /* Para que a imagem não saia fora do link */
+        display: block;
+    }
+    
+    .aparece-div:hover {
+        /*border-radius: 20px;*/
+    }
+    
+    .aparece-div span {
+        display: none;
+        /* Aqui você define que todo SPAN que estiver dentro de um A estará invisível */
+    }
+    
+    .aparece-div:hover span {
+        display: block;
+        /* Aqui você diz que ao passar o mouse sobre o link, colocar um display no span dentro desse link */
+        /* https://pt.stackoverflow.com/questions/393118/mostrar-imagem-quando-passar-o-mouse-sobre-uma-div-css*/
+    }
