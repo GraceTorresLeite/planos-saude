@@ -169,6 +169,10 @@ https://pt.stackoverflow.com/questions/299631/como-exibir-o-dropdown-apenas-desl
         font-family: 'Roboto';
         text-align: center;
     }
+    
+    .font-aspas i {
+        color: #a4a4a4;
+    }
     /*usando elemento after para colocar a barra no titulo*/
     
     .main-title::after {
@@ -403,4 +407,17 @@ https://pt.stackoverflow.com/questions/299631/como-exibir-o-dropdown-apenas-desl
         color: white;
         /* Aqui você diz que ao passar o mouse sobre o link, colocar um display no span dentro desse link */
         /* https://pt.stackoverflow.com/questions/393118/mostrar-imagem-quando-passar-o-mouse-sobre-uma-div-css*/
+    }
+    
+    #circulo {
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+        display: inline-block;
+        margin: 0;
+        margin-top: 0;
+        margin-right: 0px;
+        margin-bottom: -30px;
+        margin-left: 160px;
+        background-color: rgb(116, 111, 111);
     }

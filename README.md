@@ -20,4 +20,10 @@
 
 [Referências pesquisa](https://pt.stackoverflow.com/questions/98060/como-colocar-logo-no-cabe%C3%A7alho/98084)
 
+[Maujor - bordas](https://www.maujor.com/tutorial/propriedades-css-para-estilizacao-de-bordas.php)
+
+[Elementos float](https://pt.khanacademy.org/computing/computer-programming/html-css/css-layout-properties/pt/css-floating-elements)
+
+[Botão flutuante](https://velhobit.com.br/design/fab-botao-flutuante-com-css3-e-html-sem-javascript.html)
+
 ![Modelo](https://planodesaudesegurar.com.br)
