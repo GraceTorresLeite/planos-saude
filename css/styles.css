@@ -1,430 +1,289 @@
-    /* iniciar sessoes com comentários*/
-    /* Visualização Geral*/
-    /*@font-face {
-        font-family: 'fonte';
-        src: url('../../fonts/fonte.eot')/*Para navegadores Internet Explorer;
-        font-weight: normal;
-        font-style: normal;
-    }*/
-    /*Font Roboto*/
-    
-    @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
-    /*Font Open Sans*/
-    
-    @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap');
-    h1 {
-        color: #fb6e52;
-    }
-    
-    h4 {
-        font-family: 'Roboto', sans-serif;
-        font-family: 'Open Sans', sans-serif;
-    }
-    
-    body {
-        font-family: "Roboto";
-    }
-    /*Mexendo no hover do dropdown , aparecer quando deslizar o mouse--
-OBS 2: Tive que tirar alguns atributos padrão dos dropmenus do Bootstrap para ele não ser mais clicável ok.
-Se vc for usar esse Drop em outras situações aconselho usar classes novas e não editar as default do Bootstrap.
-https://pt.stackoverflow.com/questions/299631/como-exibir-o-dropdown-apenas-deslizando-o-mouse-sobre-o-conte%C3%BAdo..*/
-    
-    .dropdown:hover .dropdown-menu {
-        display: block;
-        position: absolute;
-        transform: translate3d(5px, 28px, 0px);
-        /* distancia entre menu e btn */
-        top: 15px;
-        left: 0px;
-        will-change: transform;
-    }
-    
-    .dropdown {
-        display: inline-block;
-        /* deixa o LO do "tamanho do próprio texto" e não da largura inteira da tela*/
-        list-style: none;
-        /* rita a "bolinha" do LI*/
-    }
-    /*inserir mais colunas no dropdown-menu sem alterar padrão mobile, somente em telas maiores*/
-    
-    @media (min-width:768px) {
-        .dropdown-menu {
-            min-width: 300px;
-        }
-    }
-    /*classe container zerando as laterais*/
-    
+/* Visualização Geral*/
+
+
+/*Font Roboto USADA SOMENTE EM TÍTULOS*/
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+/*Font Open Sans USADA --EXCETO-- EM TÍTULOS*/
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap');
+
+/*TEXTO*/
+
+h1 {
+    color: #fb6e52;
+}
+
+h4 {
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Open Sans', sans-serif;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+p,
+li {
+    color: #a4a4a4;
+    font-size: 15px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+#grey {
+    color: #a4a4a4;
+    font-family: 'Open Sans', sans-serif;
+}
+
+
+/* tamanho usado para parágrafos baseados em início PAGE ABOUT US*/
+
+#small {
+    color: #a4a4a4;
+    font-family: 'Open Sans', sans-serif;
+    line-height: 1.8;
+    font-size: 15px;
+    margin-left: 10px;
+}
+
+
+/*CABEÇALHO*/
+
+
+/*Fonte para texto acima do About Us e Latest*/
+
+.font-red-check {
+    font-size: 25px;
+    color: #fb6e52;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+}
+
+
+/*Fonte usada titulos ABOUT US e LATEST*/
+
+.main-title-about {
+    color: black;
+    margin: 0 0 65px 0;
+    font-size: 40px;
+    text-align: center;
+    font-weight: bold;
+}
+
+
+/* Barras cabeçalho usadas ABOUT US e LATEST**/
+
+.main-title-about::after {
+    content: "";
+    border-top: 2px solid #fb6e52;
+    width: 10%;
+    position: absolute;
+    top: 60px;
+    left: 45%;
+}
+
+hr {
+    border-top: 2px solid #fb6e52;
+    width: 5%;
+    position: absolute;
+    top: 50px;
+    left: 47.5%;
+}
+
+.font-red-clients {
+    font-size: 40px;
+    color: #fb6e52;
+}
+
+.font-aspas {
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+}
+
+.font-aspas i {
+    color: #a4a4a4;
+}
+
+
+/*classe container zerando as laterais*/
+
+.container {
+    padding: 25px 0 0 8px;
+}
+
+
+/*ESTRUTURA LISTA ENUMERAÇÃO POR BOLAS POR QUE NÓS? - PAGE ABOUT US*/
+
+.special-list li .number {
+    display: inline-block;
+    font-size: 15px;
+    margin-right: 8px;
+    width: 30px;
+    height: 30px;
+    padding-top: 3px;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    -webkit-border-radius: 500px;
+    -moz-border-radius: 500px;
+    border-radius: 500px;
+    border-top-left-radius: 500px;
+    border-top-right-radius: 500px;
+    border-bottom-right-radius: 500px;
+    border-bottom-left-radius: 500px;
+    background: #f3f3f3;
+    background-image: initial;
+    background-position-x: initial;
+    background-position-y: initial;
+    background-size: initial;
+    background-repeat: initial;
+    background-attachment: initial;
+    background-origin: initial;
+    background-clip: initial;
+    background-color: #f3f3f3;
+}
+
+.special-list li {
+    list-style: none;
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.special-list p {
+    display: inline-block;
+    font-family: 'Open Sans', sans-serif;
+}
+
+
+/*ESTRUTURA LISTA PLANOS IDEIAS - PAGE ABOUT US */
+
+#about-list {
+    font-size: 15px;
+    list-style: none;
+    padding-left: 0px;
+}
+
+#about-list li {
+    line-height: 29px;
+}
+
+#about-list i {
+    color: #fb6e52;
+    margin-right: 8px;
+}
+
+
+/*ESPAÇAMENTO ENTRE LINHAS UL,OL */
+
+ul,
+ol {
+    line-height: 1.4;
+    padding: 0;
+    margin-left: 10px;
+}
+
+
+/*COLUNAS SECTION LATEST*/
+
+
+/* Div section*/
+
+div.section {
+    min-height: 350px;
+}
+
+
+/*cores*/
+
+.borda {
+    background-color: grey;
+    border: 1px solid rgb(73, 72, 72);
+}
+
+.borda-1 {
+    background-color: rgb(116, 111, 111);
+    border: 1px solid rgb(73, 72, 72);
+}
+
+.borda-2 {
+    background-color: rgb(163, 158, 158);
+    border: 1px solid rgb(73, 72, 72);
+}
+
+.borda-3 {
+    background-color: rgb(187, 180, 180);
+    border: 1px solid rgb(73, 72, 72);
+}
+
+.borda-4 {
+    background-color: rgb(209, 202, 202);
+    border: 1px solid rgb(73, 72, 72);
+}
+
+.borda-red:hover {
+    background-color: #fb6e52;
+    border: 1px solid rgb(73, 72, 72);
+}
+
+
+/*HOVER PARA COLUNA RED APARECER - PAGE LATEST*/
+
+.desaparece-div {
+    list-style: none;
+}
+
+.aparece-div {
+    position: relative;
+    /* Para que a imagem não saia fora do link */
+    display: block;
+    cursor: crosshair;
+}
+
+.aparece-div span {
+    display: none;
+    /* Aqui você define que todo SPAN que estiver dentro da tag estará invisível */
+}
+
+.aparece-div:hover span {
+    display: block;
+    background: #fb6e52;
+    margin: 0px -15px 0px -15px;
+    /* preenchendo toda a row para o span*/
+    text-align: center;
+    font-size: 15px;
+    color: white;
+    /* Aqui você diz que ao passar o mouse sobre o link, colocar um display no span dentro desse link */
+}
+
+
+/*CIRCULO PERFIL NOS CARDS - PAGE LATEST*/
+
+#circulo {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: inline-block;
+    margin: 0;
+    margin-top: 0;
+    margin-right: 0px;
+    margin-bottom: -30px;
+    margin-left: 170px;
+    background-color: rgb(116, 111, 111);
+}
+
+@media (min-width: 1px) and (max-width: 576px) {
     .container {
-        padding: 25px 0 0 8px;
+        padding: 0 20px;
     }
-    /*definindo cor cinza e fonte*/
-    
-    p,
-    li {
-        color: #a4a4a4;
-        font-size: 15px;
-        font-family: "Open-Sans";
+    blockquote {
+        width: 90%;
+        .medium;
+        padding: 20px;
     }
-    
-    #grey {
-        color: #a4a4a4;
-        font-family: "Open-Sans";
-    }
-    
-    #small {
-        color: #a4a4a4;
-        font-family: "Open-Sans";
-        line-height: 1.8;
-        font-size: 15px;
-        margin-left: 10px;
-    }
-    /*Visualização Barra de navegação (sem pontução é tag)*/
-    
-    header,
-    .navbar {
-        background-color: #353D41;
-    }
-    
-    #nav-container {
-        padding-top: 0px;
-        padding-bottom: 0;
-    }
-    /* largura (#)id alterado de 75 para 100*/
-    
-    #logo {
-        max-width: 100%;
-        height: auto;
-        padding-left: 40px;
-    }
-    /* nome do lado do logo fica branco(.)classe*/
-    
-    .navbar-brand {
-        padding: 0;
-        color: #FFF;
-    }
-    /* não muda de cor quando o mouse passar*/
-    
-    .navbar-brand:hover {
-        color: #FFF;
-    }
-    /* os links ficam brancos*/
-    
-    #navbar-links a {
-        color: #FFF;
-    }
-    
-    .baixa-texto-nav {
-        padding: 2rem .8rem;
-    }
-    /* rem=trabalha com elemento hoot/ unidades de medida que se adaptam ao tamanho da fonte da página(1 x 80% )*/
-    
-    .navbar-expand-lg .navbar-nav .nav-link {
-        padding: 1rem .8rem;
-    }
-    /*Sobre a empresa*/
-    
-    #about-area {
-        background-color: #F9F9F9;
-    }
-    
-    .main-title-about {
-        color: black;
-        margin: 0 0 65px 0;
-        font-size: 40px;
-        text-align: center;
-        font-weight: bold;
-    }
-    
-    .main-title {
-        color: black;
-        margin: 0 0 65px 0;
-        font-size: 40px;
-        text-align: center;
-    }
-    /*Fonte para texto acima do About Us e Latest*/
-    
-    .font-red-check {
-        font-size: 25px;
-        color: #fb6e52;
-        font-family: 'Roboto';
-        text-align: center;
-    }
-    
-    .font-red-clients {
-        font-size: 40px;
-        color: #fb6e52;
-    }
-    
-    .font-aspas {
-        font-family: 'Roboto';
-        text-align: center;
-    }
-    
-    .font-aspas i {
-        color: #a4a4a4;
-    }
-    /*usando elemento after para colocar a barra no titulo*/
-    
-    .main-title::after {
-        content: "";
-        border-top: 2px solid #fb6e52;
-        width: 10%;
-        position: absolute;
-        top: 60px;
-        left: 45%;
-    }
-    
-    .main-title-about::after {
-        content: "";
-        border-top: 2px solid #fb6e52;
-        width: 10%;
-        position: absolute;
-        top: 60px;
-        left: 45%;
-    }
-    
-    hr {
-        border-top: 2px solid #fb6e52;
-        width: 5%;
-        position: absolute;
-        top: 50px;
-        left: 47.5%;
-    }
-    
-    .about-title {
-        font-size: 17px;
-        color: black;
-        text-transform: uppercase;
-        font-weight: bold;
-    }
-    
-    #about-list {
-        font-size: 15px;
-        list-style: none;
-        padding-left: 0px;
-    }
-    
-    #about-list li {
-        line-height: 29px;
-    }
-    
-    #about-list i {
-        /*color: #65DAF9*/
-        color: #fb6e52;
-        margin-right: 8px;
-    }
-    /**/
-    
-    nav {
-        text-align: center;
-    }
-    
-    nav a {
-        padding: 10px;
-        font-family: "Roboto";
-        font-size: 20px;
-        color: black;
-        /*font-weight: bold;*/
-    }
-    
-    .nav-item a {
-        padding: 10px;
-        font-family: "Roboto";
-        font-size: 20px;
-        color: black;
-        /*font-weight: bold;*/
-    }
-    
-    a:link,
-    a:hover,
-    a:active {
-        color: #fb6e52;
-        outline: none;
-        text-decoration: none;
-    }
-    
-    div.nav-test {
-        width: 300px;
-        height: 200px;
-        line-height: 30px;
-        text-align: left;
-        padding: 10px;
-        color: black;
-        font-family: "Roboto";
-        font-size: 16px;
-        position: absolute;
-        left: 470px;
-        z-index: 1;
-        column-span: all;
-    }
-    
-    div#um {
-        background-color: #FFF;
-    }
-    
-    div#dois {
-        background-color: #FFF;
-    }
-    
-    div#tres {
-        background-color: #FFF;
-    }
-    
-    div:target {
-        z-index: 1000;
-    }
-    /* Div section*/
-    
-    div.section {
-        min-height: 350px;
-    }
-    /* Lista de quem somos nós*/
-    /*bola numerada*/
-    
-    .special-list li .number {
-        display: inline-block;
-        font-size: 15px;
-        margin-right: 8px;
-        width: 30px;
-        height: 30px;
-        padding-top: 3px;
-        text-align: center;
-        font-family: "Roboto";
-        -webkit-border-radius: 500px;
-        -moz-border-radius: 500px;
-        border-radius: 500px;
-        border-top-left-radius: 500px;
-        border-top-right-radius: 500px;
-        border-bottom-right-radius: 500px;
-        border-bottom-left-radius: 500px;
-        background: #f3f3f3;
-        background-image: initial;
-        background-position-x: initial;
-        background-position-y: initial;
-        background-size: initial;
-        background-repeat: initial;
-        background-attachment: initial;
-        background-origin: initial;
-        background-clip: initial;
-        background-color: #f3f3f3;
-    }
-    
-    .special-list li {
-        list-style: none;
-        margin: 0;
-        font-family: "Open-Sans";
-    }
-    
-    .special-list p {
-        display: inline-block;
-        font-family: "Open-Sans";
-    }
-    
-    ul,
-    ol {
-        line-height: 1.4;
-        padding: 0;
-        margin-left: 10px;
-    }
-    /* p {
-        display: block;
-        margin-block-start: 1em;
-        margin-block-end: 1em;
-        margin-inline-start: 0px;
-        margin-inline-end: 0px;
-    }*/
-    /*css latest*/
-    
-    .borda {
-        background-color: grey;
-        border: 1px solid rgb(73, 72, 72);
-    }
-    
-    .borda-1 {
-        background-color: rgb(116, 111, 111);
-        border: 1px solid rgb(73, 72, 72);
-    }
-    
-    .borda-2 {
-        background-color: rgb(163, 158, 158);
-        border: 1px solid rgb(73, 72, 72);
-    }
-    
-    .borda-3 {
-        background-color: rgb(187, 180, 180);
-        border: 1px solid rgb(73, 72, 72);
-    }
-    
-    .borda-4 {
-        background-color: rgb(209, 202, 202);
-        border: 1px solid rgb(73, 72, 72);
-    }
-    
-    .borda-red:hover {
-        background-color: #fb6e52;
-        border: 1px solid rgb(73, 72, 72);
-    }
-    /* #class-up-center {
-        margin-left: 140px;
-    }*/
-    /*Hover para coluna red aparecer*/
-    
-    .desaparece-div {
-        list-style: none;
-    }
-    
-    .aparece-div {
-        position: relative;
-        /* Para que a imagem não saia fora do link */
-        display: block;
-    }
-    /* .aparece-div:hover {
-        background: #fb6e52;
-    }*/
-    
-    .aparece-div span {
-        display: none;
-        /* Aqui você define que todo SPAN que estiver dentro da tag estará invisível */
-    }
-    
-    .aparece-div:hover span {
-        display: block;
-        background: #fb6e52;
-        margin: 0px -15px 0px -15px;
-        /* preenchendo toda a row para o span*/
-        text-align: center;
-        font-size: 15px;
-        color: white;
-        /* Aqui você diz que ao passar o mouse sobre o link, colocar um display no span dentro desse link */
-        /* https://pt.stackoverflow.com/questions/393118/mostrar-imagem-quando-passar-o-mouse-sobre-uma-div-css*/
-    }
-    
-    #circulo {
-        width: 60px;
-        height: 60px;
-        border-radius: 50%;
-        display: inline-block;
-        margin: 0;
-        margin-top: 0;
-        margin-right: 0px;
-        margin-bottom: -30px;
-        margin-left: 170px;
-        background-color: rgb(116, 111, 111);
-    }
-    
-    @media (min-width: 1px) and (max-width: 576px) {
-        .container {
-            padding: 0 20px;
-        }
-        blockquote {
-            width: 90%;
-            .medium;
-            padding: 20px;
-        }
-    }
-    
-    @media (min-width: 576px) and (max-width: 768px) {}
-    
-    @media (min-width: 769px) and (max-width: 992px) {}
-    
-    @media (min-width: 993px) {}
+}
+
+@media (min-width: 576px) and (max-width: 768px) {}
+
+@media (min-width: 769px) and (max-width: 992px) {}
+
+@media (min-width: 993px) {}
