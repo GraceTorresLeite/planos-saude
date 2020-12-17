@@ -421,3 +421,20 @@ https://pt.stackoverflow.com/questions/299631/como-exibir-o-dropdown-apenas-desl
         margin-left: 170px;
         background-color: rgb(116, 111, 111);
     }
+    
+    @media (min-width: 1px) and (max-width: 576px) {
+        .container {
+            padding: 0 20px;
+        }
+        blockquote {
+            width: 90%;
+            .medium;
+            padding: 20px;
+        }
+    }
+    
+    @media (min-width: 576px) and (max-width: 768px) {}
+    
+    @media (min-width: 769px) and (max-width: 992px) {}
+    
+    @media (min-width: 993px) {}
