@@ -6,29 +6,19 @@
         font-weight: normal;
         font-style: normal;
     }*/
+    /*Font Roboto*/
     
-    @font-face {
-        font-family: 'Roboto';
-        src: url('../../fonts/Roboto/Roboto-Regular.ttf')/*Para os demais navegadores*/
-        ;
-        font-weight: normal;
-        font-style: normal;
-    }
+    @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+    /*Font Open Sans*/
     
-    @font-face {
-        font-family: 'OpenSans';
-        src: url('../../fonts/OpenSans/OpenSans-Regular.ttf')/*Para os demais navegadores*/
-        ;
-        font-weight: normal;
-        font-style: normal;
-    }
-    
+    @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap');
     h1 {
         color: #fb6e52;
     }
     
     h4 {
-        font-family: "Roboto";
+        font-family: 'Roboto', sans-serif;
+        font-family: 'Open Sans', sans-serif;
     }
     
     body {
